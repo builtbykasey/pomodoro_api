@@ -1,15 +1,5 @@
 class TaskSerializer < ActiveModel::Serializer
-  attributes :id, :title, :uid
+  attributes :id, :title
 
-  def id
-    object.id
-  end
-
-  def title
-    object.title
-  end
-
-  def uid
-    object.uid
-  end
+  has_one :user
 end
