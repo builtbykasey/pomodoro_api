@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'devise_token_auth'
+gem 'active_model_serializers', '~> 0.10.0'
 
 group :production do
   gem 'pg'
